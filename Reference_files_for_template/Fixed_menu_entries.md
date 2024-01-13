@@ -193,4 +193,75 @@ Via: C.B Cavour , 165, 47521, Cesena FC
  Se hai un'allergia o un'intolleranza alimentare (o se una persona per la quale stai effettuando un ordine ne ha), telefona immediatamente al ristorante al numero 3281325773.  
  Non effettuare l'ordine se non riesci ad ottenere le informazioni di cui hai bisogno.
 
+  23. Hot dog 1 pz
+  24. Piadina cinese 1 pz 
+  ( Piadina cinese mi sembra avere senso in base a delle ricerche, dite la vostra.
+  25. Takoyaki 4 pz 
+  ( (Ho tolto takoyaki 8 pz. Penso non abbia senso)
+
+  26. Patatine fritte
+  27. Crocchette di pollo 5 pz 
+  ( (o nuggets di pollo? Io propongo "crocchette")
+  28. Pollo fritto misto (3 pz pollo + patatine fritte + 4 pz crocchette di pollo)
+(DA QUI TUTTO PICCANTE)
+  29. Pollo fritto con senape 3 pz
+  30. Pollo fritto piccante 3 pz        (2 piccanti)
+  31. Spiedini di coscia di pollo 1 pz 
+  ( (Sarebbe Nankotsu, Chicken bone skewers, da rivedere)
+  32. Spiedini di coscia di pollo 4 pz 
+  ( (Sarebbe Nankotsu, Chicken bone skewers, da rivedere))
+  33. Spiedini di pollo 1 pz
+  34. Spiedini di pollo 3 pz
+  35. Spiedini di carne 3 pz 
+  36. Spiedini di agnello 3 pz 
+
+  ( Riquadro piccolo sotto il precedente
+  37. Panino piccolo 1 pz
+  38. Panino medio 1 pz
+  39. Spianata 1 pz 
+  ( Ho i miei dubbi che i cinesi, se gli chiedi una spianata, ti portino davvero una spianata, però comunque siamo a Cesena, chissà... )
+  40. Toast 1 pz
+  41. Piadina 1 pz
+  42. ( ?? Piadina metta ??   Io proporrei "Mezza piadina" (Ha senso? Da rivedere) )
+
+  Uramaki 8 pz
+  B1. Uramaki sake
+   - Salmone, avocado
+  B2. Uramaki maguro
+   - Tonno, avocado
+  B3. Uramaki ebi
+   - Gamberi cotti, avocado
+  B4. Uramaki surimi
+   - Granchio, cetrioli, avocado
+  B5. Uramaki vegetale
+   - Avocado, cetrioli, insalata
+  B6. Uramaki mango
+   - Gamberi cotti, mango, avocado, salsa di mango
   
+  Hosomaki 8 pz
+  B7. Hosomaki sake
+    - Salmone
+  B8. Hosomaki maguro
+    - Tonno
+  B9. Hosomaki ebi
+    - Gamberi cotti
+  B10. Hosomaki avocado
+    - Avocado
+  B11. Hosomaki cetrioli
+    - Cetrioli
+  B12. Hosomaki surimi
+    - Granchio
+  
+  ( Propongo il titolino "Onigiri 1 pz" )
+  ( Si scrive "Onigiri", non "Onighiri" )
+  Onigiri 1 pz
+  B13. Onigiri sake 1 pz
+    - Salmone
+  B14. Onigiri maguro 1 pz
+    - Tonno
+  B15. Onigiri ebi 1 pz
+    - Gamberi cotti
+  B16. Onigiri avocado 1 pz
+    - Avocado
+
+  Poke
