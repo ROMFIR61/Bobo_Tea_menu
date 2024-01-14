@@ -194,37 +194,37 @@ Via: C.B Cavour , 165, 47521, Cesena FC
  Non effettuare l'ordine se non riesci ad ottenere le informazioni di cui hai bisogno.
 
   23. Hot dog 1 pz
-  24. Piadina cinese 1 pz 
+  24. Piadina cinese 1 pz
   ( Piadina cinese mi sembra avere senso in base a delle ricerche, dite la vostra.
-  25. Takoyaki 4 pz 
+  25. Takoyaki 4 pz
   ( (Ho tolto takoyaki 8 pz. Penso non abbia senso)
 
   26. Patatine fritte
-  27. Crocchette di pollo 5 pz 
+  27. Crocchette di pollo 5 pz
   ( (o nuggets di pollo? Io propongo "crocchette")
   28. Pollo fritto misto (3 pz pollo + patatine fritte + 4 pz crocchette di pollo)
 (DA QUI TUTTO PICCANTE)
   29. Pollo fritto con senape 3 pz
   30. Pollo fritto piccante 3 pz        (2 piccanti)
-  31. Spiedini di coscia di pollo 1 pz 
+  31. Spiedini di coscia di pollo 1 pz
   ( (Sarebbe Nankotsu, Chicken bone skewers, da rivedere)
-  32. Spiedini di coscia di pollo 4 pz 
+  32. Spiedini di coscia di pollo 4 pz
   ( (Sarebbe Nankotsu, Chicken bone skewers, da rivedere))
   33. Spiedini di pollo 1 pz
   34. Spiedini di pollo 3 pz
-  35. Spiedini di carne 3 pz 
-  36. Spiedini di agnello 3 pz 
+  35. Spiedini di carne 3 pz
+  36. Spiedini di agnello 3 pz
 
   ( Riquadro piccolo sotto il precedente
   37. Panino piccolo 1 pz
   38. Panino medio 1 pz
-  39. Spianata 1 pz 
+  39. Spianata 1 pz
   ( Ho i miei dubbi che i cinesi, se gli chiedi una spianata, ti portino davvero una spianata, però comunque siamo a Cesena, chissà... )
   40. Toast 1 pz
   41. Piadina 1 pz
   42. ( ?? Piadina metta ??   Io proporrei "Mezza piadina" (Ha senso? Da rivedere) )
 
-  Uramaki 8 pz
+  ## Uramaki 8 pz
   B1. Uramaki sake
    - Salmone, avocado
   B2. Uramaki maguro
@@ -237,8 +237,8 @@ Via: C.B Cavour , 165, 47521, Cesena FC
    - Avocado, cetrioli, insalata
   B6. Uramaki mango
    - Gamberi cotti, mango, avocado, salsa di mango
-  
-  Hosomaki 8 pz
+
+  ## Hosomaki 8 pz
   B7. Hosomaki sake
     - Salmone
   B8. Hosomaki maguro
@@ -251,8 +251,8 @@ Via: C.B Cavour , 165, 47521, Cesena FC
     - Cetrioli
   B12. Hosomaki surimi
     - Granchio
-  
-  ( Propongo il titolino "Onigiri 1 pz" )
+
+  ( Propongo il titolino "Onigiri 1 pz" ) -> È giusto
   ( Si scrive "Onigiri", non "Onighiri" )
   Onigiri 1 pz
   B13. Onigiri sake 1 pz
@@ -264,4 +264,80 @@ Via: C.B Cavour , 165, 47521, Cesena FC
   B16. Onigiri avocado 1 pz
     - Avocado
 
-  Poke
+  ## Poke
+
+  ### 12.90euro
+  - Poke salmone 1000ml   10euro
+      - Base: *Riso bianco* e *Riso nero*
+      - Proteine: *Tonno*, *Salmone* e *Surimi*
+      - Mix-In: *Mais*, *Insalata*, *Avocado*, *Pomodorini* e *Mango*
+      - Salsa: *Salsa Teriyaki* e *Salsa Mango*
+      - Crunchy: *Cipolla fritta* e *Arachidi*
+
+ ### 9.90euro
+  - Poke salmone 700ml    7euro
+    - Base: *Riso bianco*
+    - Proteine: *Salmone* e *Surimi*
+    - Mix-In: *Insalata*, *Avocado*, *Pomodorini* e *Mango*
+    - Salsa: *Salsa Teriyaki*
+    - Crunchy: *Cipolla fritta*
+
+ ### Poke medio 700ml   9.90
+  - 1 Base, 2 Proteine, 4 Mix-In, 2 Salse e 1 Crunchy
+
+ ### Poke grande 1000ml  12.90
+  - 2 Basi, 3 Proteine, 5 Mix-In, 3 Salse e 3 Crunchy
+
+ ### Base 1euro
+  - Riso bianco
+  - Riso Sushi
+  - Riso nero venere
+  - Insalata mista
+
+ ### Proteine 1euro
+  - Salmone
+  - Tonno
+  - Tonno cotto
+  - Surimi
+  - Gamberi cotti
+  - Manzo
+  - Pollo
+  - Polpo
+  - Feta
+  - Tofu
+  - Mozzarella
+
+ ### Salsa 30centesimi
+    - Salsa di soia
+    - Salsa Teriyaki
+    - Salsa di mango
+    - Salsa di frutto della passione
+    - Salsa di sesamo
+    - Olio di oliva
+    - Aceto balsamico
+    - Maionese
+
+ ### Mix-In
+  - Alghe wakame
+  - Avocado
+  - Ananas
+  - Carote
+  - Cavolo rosso
+  - Cetriolo
+  - Cipolla rossa
+  - Mais
+  - Mango
+  - Mirtilli
+  - Frutto della passione
+  - Pomodorini
+  - Olive
+  - Insalata
+  - Rucola
+
+  ### Crunchy 50centesimi
+    - Tobiko
+    - Cipolla fritta
+    - Sesamo
+    - Pistacchi
+    - Arachidi
+    - Ròusōng
