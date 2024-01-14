@@ -1,4 +1,4 @@
-\documentclass[hidelinks,12pt,a4paper]{article}
+\documentclass[hidelinks,10pt,a4paper]{article}
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{fourier} 
@@ -11,7 +11,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{float}
-\graphicspath{ {../Images} }
+\graphicspath{ {Images} }
 
 % Background page image.
 \usepackage{eso-pic}
@@ -25,6 +25,13 @@
 % To have landscape pages
 \usepackage{pdflscape}
 
+% Dummy text for testing purpose
+\usepackage{lipsum} 
+
+% Adjust margins
+\usepackage{changepage}
+\usepackage[top=0.5cm, bottom=0.5cm, outer=0cm, inner=0cm]{geometry}
+
 % License
 \usepackage[
 type={CC},
@@ -34,7 +41,30 @@ version={4.0},
 
 %---------------------------------------------------------------------
 
-% Here will be write the new commands
+\definecolor{square}{HTML}{fdbaba}
+\definecolor{desc}{HTML}{c97e82}
+
+%---------------------------------------------------------------------
+
+%%%%% Set background image %%%%%  
+\newcommand{\backGroundImage}{\includegraphics[angle=90, width=\paperwidth,height=\paperheight]{Background_1920x1080.png}}
+%%%%% 
+
+
+
+%%%%% Minipages for entries %%%%%  
+\newcommand{\mybox}[1]{
+		\colorbox{square}{
+		\begin{minipage}{\linewidth}
+			#1
+		\end{minipage}
+	}
+}
+
+\newcommand{\entry}[2]{
+	\textbf{#1}\\
+	\textcolor{desc}{#2}
+}
 
 
 %---------------------------------------------------------------------
@@ -52,14 +82,41 @@ version={4.0},
 	
 	\maketitle
 	
+	%===================================================
+	
 	% First page
 	\newpage
+	\AddToShipoutPictureBG*{\backGroundImage}
 	\begin{landscape}
-	bla bla bla 
+	
+	\hspace*{-0.70cm}
+	\begin{tabularx}{\linewidth}{XXX}
+		{
+			% First column
+			
+		\mybox{
+			\begin{tabular}{ c c c }
+				{\entry{A1 Classic bubble tea}{Tè nero, latte e tapioca}}&{700ml/500ml}&{5€/4.50€}\\
+			\end{tabular}
+		}
+		}&{
+	%	\vspace*{-4cm}
+			\lipsum*[2]
+		}&{
+			\lipsum*[3]
+		}
+	\end{tabularx}
+
+%\lipsum*[1]\lipsum*[2]\lipsum*[3]\lipsum*[4]\lipsum*[5] \lipsum*[6]\lipsum*[7]\lipsum*[8]\lipsum*[9]\lipsum*[10]
+	
+	
 	% Second page
 	\newpage
+	\AddToShipoutPictureBG*{\backGroundImage}
 	bla bla bla
 	\end{landscape}
+	
+	%===================================================
 	% License page
 	\newpage
 	\vspace*{\fill}
