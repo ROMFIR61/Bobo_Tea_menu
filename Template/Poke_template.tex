@@ -22,6 +22,9 @@
 % Minipages in the same line
 \usepackage{tabularx}
 
+% Tabular utility
+\usepackage{makecell}
+
 % To have landscape pages
 \usepackage{pdflscape}
 
@@ -61,9 +64,13 @@ version={4.0},
 	}
 }
 
-\newcommand{\entry}[2]{
-	\textbf{#1}\\
-	\textcolor{desc}{#2}
+%  Entry table formatted 3 column with description
+\newcommand{\entryThreeDesc}[4]{
+	\thead{\textbf{#1}\\\textcolor{desc}{#2}}&\thead{\vspace*{3mm}\textbf{#3}}&\thead{\vspace*{3mm}\textbf{#4}}\\
+}
+
+\newcommand{\entryThreeSimple}[3]{
+	\thead{\textbf{#1}}&\thead{\vspace*{3mm}\textbf{#2}}&\thead{\vspace*{3mm}\textbf{#3}}\\
 }
 
 
@@ -93,13 +100,17 @@ version={4.0},
 	\begin{tabularx}{\linewidth}{XXX}
 		{
 			% First column
-			
+		\vspace*{0.3cm}
 		\mybox{
-			\begin{tabular}{ c c c }
-				{\entry{A1 Classic bubble tea}{Tè nero, latte e tapioca}}&{700ml/500ml}&{5€/4.50€}\\
+			\begin{tabular}{ p{3cm} p{3cm} p{3cm} }
+			\entryThreeDesc{A1 Classic bubble tea}{Tè nero, latte e tapioca}{700ml/500ml}{5€/4.50€}
+			\entryThreeDesc{A1 Classic bubble tea}{Tè nero, latte e tapioca}{700ml/500ml}{5€/4.50€}
+				
 			\end{tabular}
 		}
+		
 		}&{
+		% Second column
 	%	\vspace*{-4cm}
 			\lipsum*[2]
 		}&{
