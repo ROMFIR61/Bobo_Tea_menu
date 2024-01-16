@@ -22,8 +22,9 @@
 % Minipages in the same line
 \usepackage{tabularx}
 
-% Tabular utility
+% Tabular utilities
 \usepackage{makecell}
+\usepackage{array}
 
 % To have landscape pages
 \usepackage{pdflscape}
@@ -66,7 +67,9 @@ version={4.0},
 
 %  Entry table formatted 3 column with description
 \newcommand{\entryThreeDesc}[4]{
-	\thead{\textbf{#1}\\\textcolor{desc}{#2}}&\thead{\vspace*{3mm}\textbf{#3}}&\thead{\vspace*{3mm}\textbf{#4}}\\
+	
+\thead{\vspace*{-6mm}\textbf{#1}}&\thead{\vspace*{-6mm}\textbf{#3}}&\thead{\vspace*{-6mm}\textbf{#4}}\\
+\thead{\vspace*{-3mm}\textcolor{desc}{#2}}\\
 }
 
 \newcommand{\entryThreeSimple}[3]{
@@ -102,9 +105,13 @@ version={4.0},
 			% First column
 		\vspace*{0.3cm}
 		\mybox{
-			\begin{tabular}{ p{3cm} p{3cm} p{3cm} }
+			\begin{tabular}{ c c c }
 			\entryThreeDesc{A1 Classic bubble tea}{Tè nero, latte e tapioca}{700ml/500ml}{5€/4.50€}
-			\entryThreeDesc{A1 Classic bubble tea}{Tè nero, latte e tapioca}{700ml/500ml}{5€/4.50€}
+			\entryThreeDesc{A2 Green bubble tea}{Tè verde, latte e tapioca}{700ml/500ml}{5€/4.50€}
+			\entryThreeDesc{A3 Jelly bubble tea}{Tè nero, latte e gelatine}{700ml}{5€}
+			\entryThreeDesc{A4 Grass jelly bubble tea}{Tè nero, latte e budini di gelatina alle erbe}{700ml}{5€}
+			\entryThreeDesc{A5 Pudding bubble tea}{Tè nero, latte, budini}{700ml}{5€}
+			\entryThreeDesc{A6 Three brothers}{Tè nero, latte, tapioca, budini e gelatina alle erbe}{700ml}{5€}
 				
 			\end{tabular}
 		}
