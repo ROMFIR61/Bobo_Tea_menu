@@ -59,7 +59,7 @@ version={4.0},
 %%%%% Minipages for entries %%%%%  
 \newcommand{\mybox}[1]{
 		\colorbox{square}{
-		\begin{minipage}{\linewidth}
+		\begin{minipage}{0.97\linewidth}
 			#1
 		\end{minipage}
 	}
@@ -75,7 +75,7 @@ version={4.0},
 }
 
 \newcommand{\entryThreeSimple}[3]{
-	\thead{\textbf{#1}}&\thead{\vspace*{3mm}\textbf{#2}}&\thead{\vspace*{3mm}\textbf{#3}}\\
+	{\textbf{#1}}&{\hspace*{5mm}\textbf{#2}}&{\hspace*{11mm}\textbf{#3}}\\
 }
 
 
@@ -107,15 +107,32 @@ version={4.0},
 			% First column
 		\vspace*{0.3cm}
 		\mybox{
-			\begin{tabular}{ l l l }
+			\begin{tabular*}{\linewidth}{ l l l }
 			\entryThreeDesc{A1 Classic bubble tea}{Tè nero, latte e tapioca}{700ml/500ml}{5€/4.50€}
 			\entryThreeDesc{A2 Green bubble tea}{Tè verde, latte e tapioca}{700ml/500ml}{5€/4.50€}
 			\entryThreeDesc{A3 Jelly bubble tea}{Tè nero, latte e gelatine}{700ml}{5€}
 			\entryThreeDesc{A4 Grass jelly bubble tea}{Tè nero, latte e budini di gelatina alle erbe}{700ml}{5€}
 			\entryThreeDesc{A5 Pudding bubble tea}{Tè nero, latte, budini}{700ml}{5€}
 			\entryThreeDesc{A6 Three brothers}{Tè nero, latte, tapioca, budini e gelatina alle erbe}{700ml}{5€}
-				
-			\end{tabular}
+			\entryThreeDesc{A7 Mint bubble tea}{Tè verde, latte, tapioca e menta}{700ml}{5€}	
+			\entryThreeDesc{A8 Strawberry bubble tea}{Tè verde, latte di fragola e tapioca}{700ml}{5€}
+			\entryThreeDesc{A9 First love}{Latte fresco, fragola, matcha, budini e crema di matcha}{700ml}{5.50€}
+			\entryThreeDesc{A10 Matcha bubble tea}{Latte fresco e matcha}{700ml}{5€}
+			\entryThreeDesc{A11 Cream drip oreo}{Tè nero, oreo, latte, perle di agar, crema di cioccolato}{700ml}{5.50€}
+			\entryThreeDesc{A12 Chocolate lava bubble tea}{Cacao, latte, cioccolato, gelatine, panna}{700ml}{5€}
+			\entryThreeDesc{A13 Coffee coconut milk}{Latte di cocco e caffè}{500ml}{5€}
+			\entryThreeDesc{A14 Mango coconut milk}{Latte di cocco e mango}{500ml}{5€}
+			\end{tabular*}
+			
+			\small{* Cambio del latte: Latte fresco 0,5€; Latte di soia 0,5€; Latte di cocco 0,5€.}
+		}
+		
+		\mybox{
+			\begin{tabular*}{\linewidth}{  l l l }
+			\entryThreeSimple{A15 Traditional black tea}{700ml}{4.50€}
+			\entryThreeSimple{A16 Traditional green tea}{700ml}{4.50€}
+			\entryThreeSimple{A17 Traditional oolong tea}{700ml}{4.50€}
+			\end{tabular*}
 		}
 		
 		}&{
