@@ -68,14 +68,14 @@ version={4.0},
 %  Entry table formatted 3 column with description
 \newcommand{\entryThreeDesc}[4]{
 	
-{\vspace*{-0.5mm}\textbf{#1}}&{\vspace*{-0.5mm}\textbf{#3}}&{\vspace*{-0.5mm}\textbf{#4}}\\
+{\vspace*{-0.5mm}\textbf{\small{#1}}}&{\vspace*{-0.5mm}\textbf{\small{#3}}}&{\vspace*{-0.5mm}\textbf{\small{#4}}}\\
 %\thead{\vspace*{-3mm}\textcolor{desc}{#2}} &\thead{{}}&\thead{{}}\\
- \multicolumn{3}{l}{\textcolor{desc}{\small{#2}}} \\
+ \multicolumn{3}{l}{\textcolor{desc}{\footnotesize{#2}}} \\
 
 }
 
 \newcommand{\entryThreeSimple}[3]{
-	{\textbf{#1}}&{\hspace*{5mm}\textbf{#2}}&{\hspace*{11mm}\textbf{#3}}\\
+	{\textbf{\small{#1}}}&{\textbf{\small{#2}}}&{\textbf{\small{#3}}}\\
 }
 
 
@@ -105,7 +105,7 @@ version={4.0},
 	\begin{tabularx}{\linewidth}{XXX}
 		{
 			% First column
-		\vspace*{0.3cm}
+		\vspace*{0.1cm}
 		\mybox{
 			\begin{tabular*}{\linewidth}{ l l l }
 			\entryThreeDesc{A1 Classic bubble tea}{Tè nero, latte e tapioca}{700ml/500ml}{5€/4.50€}
@@ -124,21 +124,73 @@ version={4.0},
 			\entryThreeDesc{A14 Mango coconut milk}{Latte di cocco e mango}{500ml}{5€}
 			\end{tabular*}
 			
-			\small{* Cambio del latte: Latte fresco 0,5€; Latte di soia 0,5€; Latte di cocco 0,5€.}
+			\footnotesize{* Cambio del latte: Latte fresco 0,5€; Latte di soia 0,5€; Latte di cocco 0,5€.}
 		}
 		
 		\mybox{
 			\begin{tabular*}{\linewidth}{  l l l }
-			\entryThreeSimple{A15 Traditional black tea}{700ml}{4.50€}
-			\entryThreeSimple{A16 Traditional green tea}{700ml}{4.50€}
-			\entryThreeSimple{A17 Traditional oolong tea}{700ml}{4.50€}
+			\entryThreeSimple{A15 Traditional black tea}{\hspace*{5mm}700ml}{\hspace*{9.5mm}4.50€}
+			\entryThreeSimple{A16 Traditional green tea}{\hspace*{5mm}700ml}{\hspace*{9.5mm}4.50€}
+			\entryThreeSimple{A17 Traditional oolong tea}{\hspace*{5mm}700ml}{\hspace*{9.5mm}4.50€}
+			\end{tabular*}
+		}
+		
+		\mybox{
+			\begin{tabular*}{\linewidth}{ l l l }
+				\entryThreeDesc{A18 Grapefruit super}{Tè verde, pompelmo e gelatine}{\hspace*{5mm}700ml}{\hspace*{10mm}5€}
+				\entryThreeDesc{A19 Orange super}{Tè verde, arancia, lime e gelatine}{\hspace*{5mm}700ml}{\hspace*{10mm}5€}
+				\entryThreeDesc{A20 Passion fruit \& orange}{Tè verde, frutto della passione, arancia e gelatine}{\hspace*{5mm}700ml}{\hspace*{10mm}5€}
+				\entryThreeDesc{A21 Passion fruit \& mango}{Tè verde, frutto della passione, mango e gelatine}{\hspace*{5mm}700ml}{\hspace*{10mm}5€}
+				\entryThreeDesc{A22 Double passion fruit}{Tè verde, frutto della passione, tapioca e gelatine}{\hspace*{5mm}700ml}{\hspace*{10mm}5€}
+				\entryThreeDesc{A23 Honeydew mango}{Latte di cocco, mango, pompelmo e semi di tapioca}{\hspace*{5mm}700ml}{\hspace*{10mm}5€}
+				\entryThreeDesc{A24 Bitter-like}{Limone e caffè}{\hspace*{5mm}700ml}{\hspace*{10mm}5€}
+			\end{tabular*}
+		}
+		
+		\mybox{
+			\begin{tabular*}{\linewidth}{ l l l }
+			\entryThreeDesc{A25 Blue charmer}{Acqua tonica, agrumi blu e limone}{\hspace*{15mm}700ml}{\hspace*{9mm}5€}
+			\entryThreeDesc{A26 Pink memories}{Acqua tonica, fragola e limone}{\hspace*{15mm}700ml}{\hspace*{9mm}5€}
+			\entryThreeDesc{A27 Sunsets}{Acqua tonica, pompelmo e limone}{\hspace*{15mm}700ml}{\hspace*{9mm}5€}
+			\entryThreeDesc{A28 Hot summer}{Acqua tonica, frutto della passione e limone}{\hspace*{15mm}700ml}{\hspace*{9mm}5€}
 			\end{tabular*}
 		}
 		
 		}&{
 		% Second column
-	%	\vspace*{-4cm}
-			\lipsum*[2]
+			\vspace*{0.1cm}
+			
+			\mybox{
+			\begin{tabular*}{\linewidth}{ l l l }
+				\entryThreeDesc{A29 Mango yakult}{Mango, yalult e gelatine}{\hspace*{8mm}700ml}{\hspace*{10mm}5€}
+				\entryThreeDesc{A30 Grapefruit yakult}{Pompelmo, yakult e gelatine}{\hspace*{8mm}700ml}{\hspace*{10mm}5€}
+				\entryThreeDesc{A31 Passion fruit yakult}{Frutto della passione, yakult e gelatine}{\hspace*{8mm}700ml}{\hspace*{10mm}5€}
+				\entryThreeDesc{A32 Lemon yakult}{Limone, yakult e gelatine}{\hspace*{8mm}700ml}{\hspace*{10mm}5€}
+				\entryThreeDesc{A33 Lychee yakult}{Litchi, yakult e gelatine}{\hspace*{8mm}700ml}{\hspace*{10mm}5€}
+			\end{tabular*}
+			}
+			
+			\mybox{
+				\begin{tabular*}{\linewidth}{ l l l }
+					\entryThreeDesc{A34 Jealous lemon}{Tè verde, limone e lime}{\hspace*{7mm}700ml}{\hspace*{10mm}5€}
+					\entryThreeDesc{A35 Strawberry treasure}{Tè verde, fragola e lime}{\hspace*{7mm}700ml}{\hspace*{10mm}5€}
+				\end{tabular*}
+			}
+			
+				\mybox{
+				\begin{tabular*}{\linewidth}{ l l l }
+					\entryThreeDesc{A36 Amazing strawberry}{Tè verde, fragola e crema}{\hspace*{-1mm}700ml}{\hspace*{10.5mm}5.50€}
+					\entryThreeDesc{A37 Amazing mango}{Tè verde, mango e crema}{\hspace*{-1mm}700ml}{\hspace*{10.5mm}5.50€}
+					\entryThreeDesc{A38 Amazing grapes}{Tè verde, uva e crema}{\hspace*{-1mm}700ml}{\hspace*{10.5mm}5.50€}
+					\entryThreeDesc{A39 Amazing lychee}{Tè verde, litchi e crema}{\hspace*{-1mm}700ml}{\hspace*{10.5mm}5.50€}
+					\entryThreeDesc{A40 Amazing coconut}{Tè verde, acqua di cocco e crema}{\hspace*{-1mm}700ml}{\hspace*{10.5mm}5.50€}
+					\entryThreeDesc{A41 Amazing pineapple}{Tè verde, ananas e crema}{\hspace*{-1mm}700ml}{\hspace*{10.5mm}5.50€}
+					\entryThreeDesc{A42 Green amazing pineapple}{Tè verde, ananas, agrumi blue e crema}{\hspace*{-1mm}700ml}{\hspace*{10mm}5.50€}
+				\end{tabular*}
+				
+				\footnotesize{* Se non diversamente specificato la crema inclusa è dolce}
+			}
+			
 		}&{
 			\lipsum*[3]
 		}
