@@ -79,10 +79,15 @@ version={4.0},
 }
 
 \makeatletter
-\newcommand\notsotiny{\@setfontsize\notsotiny{6}{7}}
+\newcommand\notsotiny{\@setfontsize\notsotiny{6.2}{7.2}}
 \makeatother
+
 \newcommand{\entryThreeSpecial}[3]{
-	{\textbf{\notsotiny{#1}}}&{\hspace*{-3.7mm}\textbf{\notsotiny{#2}}}&{\hspace*{-3.7mm}\textbf{\notsotiny{#3}}}\\
+	{\textbf{\notsotiny{#1}}}&{\hspace*{-3.7mm}\textbf{\notsotiny{#2}}}&{\hspace*{-3.3mm}\textbf{\notsotiny{#3}}}\\
+}
+\newcommand{\entryThreeSpecialDouble}[4]{
+	{\vspace*{-0.5mm}\textbf{\notsotiny{#1}}}&{\vspace*{-0.5mm}\hspace*{-3.7mm}\textbf{\notsotiny{#3}}}&{\vspace*{-0.5mm}\hspace*{-3.3mm}\textbf{\notsotiny{#4}}}\\
+	 \multicolumn{3}{l}{\notsotiny{#2}}\\
 }
 
 \newcommand{\entryTwoSimple}[2]{
@@ -240,15 +245,15 @@ version={4.0},
 						\entryThreeSpecial{A49 Fanta }{330ml}{2.20€}
 						\entryThreeSpecial{A50 Sprite}{330ml}{2.20€}
 						\entryThreeSpecial{A51 Estathé}{200ml}{1.30€}
-						\entryThreeSpecial{A52 Jia duo bao (Tè alle erbe)}{310ml}{2.50€}
-						\entryThreeSpecial{A53 Wangzai (Latte condensato)}{245ml}{2.50€}
+						\entryThreeSpecialDouble{A52 Jia duo bao}{(Tè alle erbe)}{310ml}{2.50€}
+						\entryThreeSpecialDouble{A53 Wangzai}{(Latte condensato)}{245ml}{2.50€}
 						\entryThreeSpecial{A54 Ocean Bomb di Sailor Moon}{330ml}{3.50€}
 						\entryThreeSpecial{A55 Ocean Bomb di Dragon Ball}{330ml}{3.50€}
 						\end{tabular*}
 					}&{
 						\begin{tabular*}{\linewidth}{ l l l }
-						\entryThreeSpecial{A56 Hata Kosen (Bibita frizzante)}{200ml}{3€}
-						\entryThreeSpecial{A57 Mogu Mogu (Bibita dolce)}{320ml}{2.50€}
+						\entryThreeSpecialDouble{A56 Hata Kosen}{(Bibita frizzante)}{200ml}{3€}
+						\entryThreeSpecialDouble{A57 Mogu Mogu}{(Bibita dolce)}{320ml}{2.50€}
 						\entryThreeSpecial{A58 Bira Becks }{330ml}{2.50€}
 						\entryThreeSpecial{A59 Birra Peroni}{330ml}{2.50€}
 						\entryThreeSpecial{A60 Birra Heineken }{330ml}{2.50€}
