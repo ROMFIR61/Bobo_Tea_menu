@@ -78,6 +78,17 @@ version={4.0},
 	{\textbf{\small{#1}}}&{\textbf{\small{#2}}}&{\textbf{\small{#3}}}\\
 }
 
+\makeatletter
+\newcommand\notsotiny{\@setfontsize\notsotiny{6}{7}}
+\makeatother
+\newcommand{\entryThreeSpecial}[3]{
+	{\textbf{\notsotiny{#1}}}&{\hspace*{-3.7mm}\textbf{\notsotiny{#2}}}&{\hspace*{-3.7mm}\textbf{\notsotiny{#3}}}\\
+}
+
+\newcommand{\entryTwoSimple}[2]{
+	{\textbf{\scriptsize{#1}}}&{\hspace*{-2.5mm}\textbf{\scriptsize{#2}}}\\
+}
+
 
 %---------------------------------------------------------------------
 
@@ -156,6 +167,7 @@ version={4.0},
 			\end{tabular*}
 		}
 		
+		
 		}&{
 		% Second column
 			\vspace*{0.1cm}
@@ -189,6 +201,65 @@ version={4.0},
 				\end{tabular*}
 				
 				\footnotesize{* Se non diversamente specificato la crema inclusa è dolce}
+			}
+			
+			\mybox{
+				\begin{center}
+					\small{\textbf{Ingredienti per bubble tea:}}
+				\end{center}
+				\vspace*{-3mm}
+				\begin{tabularx}{\linewidth}{XX}
+					{
+					\begin{tabular*}{\linewidth}{ l l }
+						\entryTwoSimple{Crema cheesecake di Philadelphia}{1€}
+						\entryTwoSimple{Panna}{1€}
+						\entryTwoSimple{Mochi}{1€}
+						\entryTwoSimple{Purea di taro}{1€}
+						\entryTwoSimple{Palline di taro a tre colori}{1€}
+						\entryTwoSimple{Palline di tapioca nera}{0.50€}
+					\end{tabular*}
+					}&{
+					\begin{tabular*}{\linewidth}{ l l }
+						\entryTwoSimple{Palline di agar}{0.50€}
+						\entryTwoSimple{Palline di tapioca}{0.50€}
+						\entryTwoSimple{Popping Boba}{0.50€}
+						\entryTwoSimple{Gelatine di cocco}{0.50€}
+						\entryTwoSimple{Budini}{0.50€}
+						\entryTwoSimple{Budini di gelatina alle erbe}{0.50€}
+					\end{tabular*}
+					}
+				\end{tabularx}
+			}
+			
+			\mybox{
+				\begin{tabularx}{\linewidth}{XX}
+					{
+						\begin{tabular*}{\linewidth}{ l l l }
+						\entryThreeSpecial{A47 Acqua naturale/frizzante}{500ml}{1€}
+						\entryThreeSpecial{A48 Coca Cola/Coca Cola Zero}{330ml}{2.20€}
+						\entryThreeSpecial{A49 Fanta }{330ml}{2.20€}
+						\entryThreeSpecial{A50 Sprite}{330ml}{2.20€}
+						\entryThreeSpecial{A51 Estathé}{200ml}{1.30€}
+						\entryThreeSpecial{A52 Jia duo bao (Tè alle erbe)}{310ml}{2.50€}
+						\entryThreeSpecial{A53 Wangzai (Latte condensato)}{245ml}{2.50€}
+						\entryThreeSpecial{A54 Ocean Bomb di Sailor Moon}{330ml}{3.50€}
+						\entryThreeSpecial{A55 Ocean Bomb di Dragon Ball}{330ml}{3.50€}
+						\end{tabular*}
+					}&{
+						\begin{tabular*}{\linewidth}{ l l l }
+						\entryThreeSpecial{A56 Hata Kosen (Bibita frizzante)}{200ml}{3€}
+						\entryThreeSpecial{A57 Mogu Mogu (Bibita dolce)}{320ml}{2.50€}
+						\entryThreeSpecial{A58 Bira Becks }{330ml}{2.50€}
+						\entryThreeSpecial{A59 Birra Peroni}{330ml}{2.50€}
+						\entryThreeSpecial{A60 Birra Heineken }{330ml}{2.50€}
+						\entryThreeSpecial{A61 Birra Ichnusa }{330ml}{3€}
+						\entryThreeSpecial{A62 Birra Ceres}{330ml}{3€}
+						\entryThreeSpecial{A63 Birra Corona }{330ml}{3€}
+						\entryThreeSpecial{A64 Birra Moretti}{660ml}{3€}
+						\end{tabular*}
+					}
+				\end{tabularx}
+				
 			}
 			
 		}&{
