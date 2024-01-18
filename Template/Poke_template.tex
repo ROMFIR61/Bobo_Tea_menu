@@ -67,11 +67,9 @@ version={4.0},
 
 %  Entry table formatted 3 column with description
 \newcommand{\entryThreeDesc}[4]{
-	
 {\vspace*{-0.5mm}\textbf{\small{#1}}}&{\vspace*{-0.5mm}\textbf{\small{#3}}}&{\vspace*{-0.5mm}\textbf{\small{#4}}}\\
 %\thead{\vspace*{-3mm}\textcolor{desc}{#2}} &\thead{{}}&\thead{{}}\\
  \multicolumn{3}{l}{\textcolor{desc}{\footnotesize{#2}}} \\
-
 }
 
 \newcommand{\entryThreeSimple}[3]{
@@ -94,6 +92,11 @@ version={4.0},
 	{\textbf{\scriptsize{#1}}}&{\hspace*{-2.5mm}\textbf{\scriptsize{#2}}}\\
 }
 
+\newcommand{\entryTwoDesc}[3]{
+	{\vspace*{-0.5mm}\textbf{\small{#1}}}&{\vspace*{-0.5mm}\textbf{\small{#3}}}\\
+	%\thead{\vspace*{-3mm}\textcolor{desc}{#2}} &\thead{{}}&\thead{{}}\\
+	\multicolumn{2}{l}{\textcolor{desc}{\footnotesize{#2}}}\\
+}
 
 %---------------------------------------------------------------------
 
@@ -176,7 +179,6 @@ version={4.0},
 		}&{
 		% Second column
 			\vspace*{0.1cm}
-			
 			\mybox{
 			\begin{tabular*}{\linewidth}{ l l l }
 				\entryThreeDesc{A29 Mango yakult}{Mango, yalult e gelatine}{\hspace*{8mm}700ml}{\hspace*{10mm}5€}
@@ -264,21 +266,82 @@ version={4.0},
 						\end{tabular*}
 					}
 				\end{tabularx}
-				
 			}
 			
 		}&{
 			\lipsum*[3]
 		}
 	\end{tabularx}
-
-%\lipsum*[1]\lipsum*[2]\lipsum*[3]\lipsum*[4]\lipsum*[5] \lipsum*[6]\lipsum*[7]\lipsum*[8]\lipsum*[9]\lipsum*[10]
 	
 	
 	% Second page
 	\newpage
 	\AddToShipoutPictureBG*{\backGroundImage}
-	bla bla bla
+	
+	\hspace*{-0.70cm}
+	\begin{tabularx}{\linewidth}{XXX}
+		{
+		
+		\vspace*{0.1cm}
+		\mybox{
+			\begin{tabular*}{\linewidth}{ l l l }
+				\entryThreeDesc{Involtini di primavera}{Carote, cavolo, cipolla e carne}{\hspace*{4mm}2pz}{\hspace*{13mm}2€}
+				\entryThreeDesc{Ravioli di carne al vapore}{Carote, cavolo e carne}{\hspace*{4mm}4pz}{\hspace*{13mm}4€}
+				\entryThreeDesc{Ravioli di carne alla griglia}{Carote, cavolo e carne}{\hspace*{4mm}4pz}{\hspace*{13mm}4.50€}
+				\entryThreeDesc{Ravioli di verdure al vapore}{Funghi, funghi cinesi, wakame, mais e carote}{\hspace*{4mm}4pz}{\hspace*{13mm}4€}
+			\end{tabular*}
+		}
+			
+			\mybox{
+				\begin{tabular*}{\linewidth}{ l l }
+					\entryTwoDesc{Riso alla cantonese}{Riso, piselli, prosciutto cotto e uovo}{arg3}
+					\entryTwoDesc{Riso con verdure}{Riso, carote, cavolo e zucchine}{arg3}
+					\entryTwoDesc{Riso con pollo}{Riso, pollo, uovo, carote, cavolo e zucchine}{arg3}
+					\entryTwoDesc{Riso con gamberi}{Riso, gamberi, uovo, carote, cavolo e zucchine}{arg3}
+				\end{tabular*}
+			}
+			
+			\mybox{
+				\begin{tabular*}{\linewidth}{ l l }
+					\entryTwoDesc{Spaghetti di riso con verdure}{Spaghetti di riso, carote, cavolo, zucchine e uovo}{arg3}
+					\entryTwoDesc{Spaghetti di riso con pollo}{Spaghetti di riso, pollo, carote, cavolo, zucchine e uovo}{arg3}
+					\entryTwoDesc{Spaghetti di riso con gamberi}{Spaghetti di riso, gamberi, carote, cavolo, zucchine e uovo}{arg3}
+				\end{tabular*}
+			}
+			
+				\mybox{
+				\begin{tabular*}{\linewidth}{ l l }
+					\entryTwoDesc{Spaghetti di soia con verdure}{Spaghetti di soia, carote, cavolo e zucchine}{arg3}
+					\entryTwoDesc{Spaghetti di soia con pollo}{Spaghetti di soia, pollo, carote, cavolo e zucchine}{arg3}
+					\entryTwoDesc{Spaghetti di soia con gamberi}{Spaghetti di soia, gamberi, carote, cavolo e zucchine}{arg3}
+				\end{tabular*}
+			}
+			
+			\mybox{
+				\begin{tabular*}{\linewidth}{ l l }
+					\entryTwoDesc{Pollo con verdure}{Pollo, carote, cavolo e zucchine}{arg3}
+					\entryTwoDesc{Pollo piccante 🌶}{arg2}{arg3}
+					\entryTwoDesc{arg1}{arg2}{arg3}
+					\entryTwoDesc{arg1}{arg2}{arg3}
+				\end{tabular*}
+			}
+			
+			\mybox{
+				\begin{tabular*}{\linewidth}{ l l }
+					\entryTwoDesc{arg1}{arg2}{arg3}
+					\entryTwoDesc{arg1}{arg2}{arg3}
+					\entryTwoDesc{arg1}{arg2}{arg3}
+					\entryTwoDesc{arg1}{arg2}{arg3}
+				\end{tabular*}
+			}
+		
+		}&{
+		
+		}&{
+		
+		}
+	\end{tabularx}
+	
 	\end{landscape}
 	
 	%===================================================
