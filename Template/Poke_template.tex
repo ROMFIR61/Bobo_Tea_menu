@@ -36,6 +36,10 @@
 \usepackage{changepage}
 \usepackage[top=0.5cm, bottom=0.5cm, outer=0cm, inner=0cm]{geometry}
 
+% Include emoticons
+\usepackage{scalerel}
+\usepackage{xparse}
+
 % License
 \usepackage[
 type={CC},
@@ -97,6 +101,9 @@ version={4.0},
 	%\thead{\vspace*{-3mm}\textcolor{desc}{#2}} &\thead{{}}&\thead{{}}\\
 	\multicolumn{2}{l}{\textcolor{desc}{\footnotesize{#2}}}\\
 }
+
+% Chili emoticon
+\NewDocumentCommand\chili{}{\scalerel*{\includegraphics{Chili.png}}{X}}
 
 %---------------------------------------------------------------------
 
@@ -294,44 +301,46 @@ version={4.0},
 			
 			\mybox{
 				\begin{tabular*}{\linewidth}{ l l }
-					\entryTwoDesc{Riso alla cantonese}{Riso, piselli, prosciutto cotto e uovo}{arg3}
-					\entryTwoDesc{Riso con verdure}{Riso, carote, cavolo e zucchine}{arg3}
-					\entryTwoDesc{Riso con pollo}{Riso, pollo, uovo, carote, cavolo e zucchine}{arg3}
-					\entryTwoDesc{Riso con gamberi}{Riso, gamberi, uovo, carote, cavolo e zucchine}{arg3}
+					\entryTwoDesc{Riso alla cantonese}{Riso, piselli, prosciutto cotto e uovo}{\hspace*{37mm}5€}
+					\entryTwoDesc{Riso con verdure}{Riso, carote, cavolo e zucchine}{\hspace*{37mm}5€}
+					\entryTwoDesc{Riso con pollo}{Riso, pollo, uovo, carote, cavolo e zucchine}{\hspace*{37mm}5€}
+					\entryTwoDesc{Riso con gamberi}{Riso, gamberi, uovo, carote, cavolo e zucchine}{\hspace*{37mm}5.50€}
 				\end{tabular*}
 			}
 			
 			\mybox{
 				\begin{tabular*}{\linewidth}{ l l }
-					\entryTwoDesc{Spaghetti di riso con verdure}{Spaghetti di riso, carote, cavolo, zucchine e uovo}{arg3}
-					\entryTwoDesc{Spaghetti di riso con pollo}{Spaghetti di riso, pollo, carote, cavolo, zucchine e uovo}{arg3}
-					\entryTwoDesc{Spaghetti di riso con gamberi}{Spaghetti di riso, gamberi, carote, cavolo, zucchine e uovo}{arg3}
+					\entryTwoDesc{Spaghetti di riso con verdure}{Spaghetti di riso, carote, cavolo, zucchine e uovo}{\hspace*{23mm}5€}
+					\entryTwoDesc{Spaghetti di riso con pollo}{Spaghetti di riso, pollo, carote, cavolo, zucchine e uovo}{\hspace*{23mm}5€}
+					\entryTwoDesc{Spaghetti di riso con gamberi}{Spaghetti di riso, gamberi, carote, cavolo, zucchine e uovo}{\hspace*{23mm}5.50€}
 				\end{tabular*}
 			}
 			
 				\mybox{
 				\begin{tabular*}{\linewidth}{ l l }
-					\entryTwoDesc{Spaghetti di soia con verdure}{Spaghetti di soia, carote, cavolo e zucchine}{arg3}
-					\entryTwoDesc{Spaghetti di soia con pollo}{Spaghetti di soia, pollo, carote, cavolo e zucchine}{arg3}
-					\entryTwoDesc{Spaghetti di soia con gamberi}{Spaghetti di soia, gamberi, carote, cavolo e zucchine}{arg3}
+					\entryTwoDesc{Spaghetti di soia con verdure}{Spaghetti di soia, carote, cavolo e zucchine}{\hspace*{23mm}5€}
+					\entryTwoDesc{Spaghetti di soia con pollo}{Spaghetti di soia, pollo, carote, cavolo e zucchine}{\hspace*{23mm}5€}
+					\entryTwoDesc{Spaghetti di soia con gamberi}{Spaghetti di soia, gamberi, carote, cavolo e zucchine}{\hspace*{23mm}5.50€}
 				\end{tabular*}
 			}
 			
 			\mybox{
 				\begin{tabular*}{\linewidth}{ l l }
-					\entryTwoDesc{Pollo con verdure}{Pollo, carote, cavolo e zucchine}{arg3}
-					\entryTwoDesc{Pollo piccante 🌶}{arg2}{arg3}
-					\entryTwoDesc{arg1}{arg2}{arg3}
-					\entryTwoDesc{arg1}{arg2}{arg3}
+					\entryTwoDesc{Pollo con verdure}{Pollo, carote, cavolo e zucchine}{\hspace*{15mm}5.50€}
+					\entryTwoDesc{Pollo piccante \hspace*{24mm}\Large{\chili}}{Pollo, carote, cavolo, zucchine e salsa piccante}{\hspace*{15mm}5.50€}
+					%\entryThreeDesc{Pollo piccante}{Pollo, carote, cavolo, zucchine e salsa piccante}{\chili}{5.50€}
+					\entryTwoDesc{Pollo al curry}{Pollo, carote, cavolo, zucchine e salsa al curry}{\hspace*{15mm}5.50€}
+					\entryTwoDesc{Pollo al limone}{Pollo, limone e salsa al limone}{\hspace*{15mm}5.50€}
 				\end{tabular*}
 			}
 			
 			\mybox{
 				\begin{tabular*}{\linewidth}{ l l }
-					\entryTwoDesc{arg1}{arg2}{arg3}
-					\entryTwoDesc{arg1}{arg2}{arg3}
-					\entryTwoDesc{arg1}{arg2}{arg3}
-					\entryTwoDesc{arg1}{arg2}{arg3}
+					\entryTwoDesc{Gamberi con verdure}{Gamberi, carote, cavolo e zucchine}{\hspace*{15mm}7.50€}
+					\entryTwoDesc{Gamberi piccanti  \hspace*{20mm}\Large{\chili}}{Gamberi, carote, cavolo, zucchine e salsa piccante}{\hspace*{15mm}7.50€}
+				%	\entryThreeDesc{Gamberi piccanti}{Gamberi, carote, cavolo, zucchine e salsa piccante}{\chili}{7.50€}
+					\entryTwoDesc{Gamberi al curry}{Gamberi, carote, cavolo, zucchine e salsa al curry}{\hspace*{15mm}7.50€}
+					\entryTwoDesc{Gamberi al limone}{Gamberi, limone e salsa al limone}{\hspace*{15mm}7.50€}
 				\end{tabular*}
 			}
 		
