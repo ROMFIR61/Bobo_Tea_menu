@@ -43,6 +43,9 @@
 % Stop hyphenation
 \usepackage[none]{hyphenat}
 
+% To create a list of checkboxes
+\usepackage{enumitem,amssymb}
+
 % License
 \usepackage[
 type={CC},
@@ -55,6 +58,8 @@ version={4.0},
 \definecolor{square}{HTML}{fdbaba}
 \definecolor{alert}{HTML}{fdeeeb}
 \definecolor{desc}{HTML}{c97e82}
+\definecolor{highlight}{HTML}{ef7d6b}
+
 
 %---------------------------------------------------------------------
 
@@ -62,7 +67,7 @@ version={4.0},
 \newcommand{\backGroundImage}{\includegraphics[angle=90, width=\paperwidth,height=\paperheight]{Background_1920x1080.png}}
 %%%%% 
 
-
+%---------------------------------------------------------------------
 
 %%%%% Minipages for entries %%%%%  
 \newcommand{\mybox}[1]{
@@ -72,6 +77,8 @@ version={4.0},
 		\end{minipage}
 	}
 }
+
+%---------------------------------------------------------------------
 
 %  Entry table formatted 3 column with description
 \newcommand{\entryThreeDesc}[4]{
@@ -112,11 +119,21 @@ version={4.0},
 	\multicolumn{2}{l}{\textcolor{desc}{\footnotesize{#2}}}\\
 }
 
+%---------------------------------------------------------------------
+
 % Chili emoticon
 \NewDocumentCommand\chili{}{\scalerel*{\includegraphics{Chili.png}}{X}}
 
 % ! emoticon
 \NewDocumentCommand\exclamationPoint{}{\scalerel*{\includegraphics{!.png}}{X}}
+
+% Space to avoid a bug
+\NewDocumentCommand\Space{}{\scalerel*{\includegraphics{Space.png}}{X}}
+
+%---------------------------------------------------------------------
+
+\newlist{checkboxList}{itemize}{2}
+\setlist[checkboxList]{label=$\square$}
 
 %---------------------------------------------------------------------
 
@@ -356,9 +373,7 @@ version={4.0},
 					\entryTwoDesc{Gamberi al limone}{\vspace*{-0.5mm}Gamberi, limone e salsa al limone}{\hspace*{15mm}7.50€}
 				\end{tabular*}
 			}
-			
-			%----------------------------------------------- Here i'm working  ------------------------------------
-				
+	
 				\vspace*{1mm}
 				\colorbox{alert}{
 				\begin{minipage}{0.97\linewidth}
@@ -368,10 +383,161 @@ version={4.0},
 					\vspace*{-0.5mm}
 				\end{minipage}
 			}
+			
+		}&{
+				
+				\vspace*{0.1cm}			
+				\mybox{
+				\begin{tabular*}{\linewidth}{ l l l }
+				\entryThreeSimple{Hot dog}{\hspace*{30mm}1pz}{\hspace*{13mm}2€}
+				\entryThreeSimple{Piadina cinese}{\hspace*{30mm}1pz}{\hspace*{13mm}6€}
+				\entryThreeSimple{Takoyaki}{\hspace*{30mm}4pz}{\hspace*{13mm}3€}
+				\end{tabular*}
+			}
+			
+			\mybox{
+				\begin{tabular*}{\linewidth}{ l l l }
+				\entryThreeSimple{Patatine fritte}{\hspace*{29mm}}{\hspace*{9mm}3€}
+				\entryThreeSimple{Crocchette di pollo}{\hspace*{20mm}5pz}{\hspace*{9mm}3.50€}
+				\entryThreeDesc{Pollo fritto misto }{3pz pollo + patatine fritte + 4pz crocchette di pollo}{\hspace*{20mm}3+1+4}{\hspace*{9mm}7€}
+				\entryThreeSimple{Pollo fritto con senape}{\hspace*{5mm}{\Large\chili}\hspace*{10.5mm}3pz}{\hspace*{9mm}4.50€}
+				\entryThreeSimple{Pollo fritto piccante}{\hspace*{5mm}{\Large\chili\chili}\hspace*{6mm}3pz}{\hspace*{9mm}4.50€}
+				\entryThreeDesc{Nankotsu}{Spiedini di cartilagine di pollo}{\hspace*{5mm}{\Large\chili}\hspace*{10.5mm}1pz}{\hspace*{9mm}1.50€}
+				\entryThreeDesc{Nankotsu}{Spiedini di cartilagine di pollo}{\hspace*{5mm}{\Large\chili}\hspace*{10.5mm}4pz}{\hspace*{9mm}5€}
+				\entryThreeSimple{Spiedini di pollo}{\hspace*{5mm}{\Large\chili}\hspace*{10.5mm}1pz}{\hspace*{9mm}2€}
+				\entryThreeSimple{Spiedini di pollo}{\hspace*{5mm}{\Large\chili}\hspace*{10.5mm}3pz}{\hspace*{9mm}5€}
+				\entryThreeSimple{Spiedini di carne}{\hspace*{5mm}{\Large\chili}\hspace*{10.5mm}3pz}{\hspace*{9mm}5€}
+				\entryThreeSimple{Spiedini di agnello}{\hspace*{5mm}{\Large\chili}\hspace*{10.5mm}3pz}{\hspace*{9mm}5€}
+				\end{tabular*}
+			}
+			
+				\mybox{
+					\hspace*{-3mm}
+				\begin{tabularx}{\linewidth}{XX}
+					{
+						\begin{tabular*}{\linewidth}{ l l l }
+						\entryThreeSimple{Panino piccolo}{1pz}{1.70€}
+						\entryThreeSimple{Panino medio}{1pz}{2.70€}
+						\entryThreeSimple{Spianata}{1pz}{2.20€}
+						\end{tabular*}
+					}&{
+						\begin{tabular*}{\linewidth}{ l l l }
+							\entryThreeSimple{Toast}{1pz}{3€}
+							\entryThreeSimple{Piadina}{1pz}{5€}
+							\entryThreeSimple{Mezza piadina}{1pz}{2.70€}
+						\end{tabular*}
+					}
+				\end{tabularx}
+			}
+			
+			\mybox{
+				\hspace*{-3mm}
+				\begin{tabularx}{\linewidth}{XX}
+					{
+						{\hspace*{8mm} \large \textbf{Uramaki\Space8pz}}
+						\begin{tabular*}{\linewidth}{ l l }
+							\entryTwoDesc{B1 Uramaki sake}{\vspace*{-0.5mm}Salmone e avocado}{8€}
+							\entryTwoDesc{B2 Uramaki maguro}{\vspace*{-0.5mm}Tonno e avocado}{9€}
+							\entryTwoDesc{B3 Uramaki ebi}{\vspace*{-0.5mm}Gamberi cotti e avocado}{8€}
+							\entryTwoDesc{B4 Uramaki surimi}{\vspace*{-0.5mm}Granchio, cetrioli e avocado}{8€}
+							\entryTwoDesc{B5 Uramaki vegetale}{\vspace*{-0.5mm}Avocado, cetrioli e insalata}{8€}
+							\entryTwoDesc{B6 Uramaki mango}{\vspace*{-0.5mm}\thead{Gamberi cotti, mango, avocado\\ \hspace*{-17mm}e salsa di mango}}{9€}
+						\end{tabular*}
+					}&{
+						{\hspace*{8mm} \large \textbf{Hosomaki\Space8pz}}
+						\begin{tabular*}{\linewidth}{ l l }
+							\entryTwoDesc{B7 Hosomaki sake}{\vspace*{-0.5mm}Salmone}{4€}
+							\entryTwoDesc{B8 Hosomaki maguro}{\vspace*{-0.5mm}Tonno}{4.50€}
+							\entryTwoDesc{B9 Hosomaki ebi}{\vspace*{-0.5mm}Gamberi cotti}{4€}
+							\entryTwoDesc{B10 Hosomaki avocado}{\vspace*{-0.5mm}Avocado}{4€}
+							\entryTwoDesc{B11 Hosomaki cetrioli}{\vspace*{-0.5mm}Cetrioli}{3.50€}
+							\entryTwoDesc{B12 Hosomaki surimi}{\vspace*{-0.5mm}Granchio}{4€}
+						\end{tabular*}
+					}
+				\end{tabularx}
+			}
+			
+			\mybox{
+				\begin{tabular*}{\linewidth}{ l l l }
+				\entryThreeDesc{B13 Onigiri sake}{Salmone}{\hspace*{14mm}1pz}{\hspace*{13mm}4€}
+				\entryThreeDesc{B14 Onigiri maguro}{Tonno}{\hspace*{14mm}1pz}{\hspace*{13mm}4.50€}
+				\entryThreeDesc{B15 Onigiri ebi}{Gamberi cotti}{\hspace*{14mm}1pz}{\hspace*{13mm}4€}
+				\entryThreeDesc{B16 Onigiri avocado}{Avocado}{\hspace*{14mm}1pz}{\hspace*{13mm}4€}
+				\end{tabular*}
+			}
 		
 		}&{
-		
-		}&{
+		\vspace*{0.1cm}
+		{\hspace*{40mm} \huge \textbf{POKE}}\newline
+		\begin{tabularx}{\linewidth}{XX}
+			{
+			\mybox{
+				\begin{center}
+					\includegraphics[scale=2]{Poke_big.png}
+				\end{center}
+				\vspace*{-4mm}
+			\textbf{Poke salmone 1000ml   10€}
+			\vspace*{-3mm}
+			\raggedright
+			\begin{itemize}
+				\setlength\itemsep{-2mm}
+				\item {\footnotesize Base: Riso bianco e Riso nero}
+				\item {\footnotesize Proteine: Tonno, Salmone e Surimi}
+				\item {\footnotesize Mix-In: Mais, Insalata, Avocado, Pomodorini e Mango}
+				\item {\footnotesize Salsa: Salsa Teriyaki e Salsa Mango}
+				\item {\footnotesize Crunchy: Cipolla fritta e Arachidi}
+			\end{itemize}
+			}
+			}&{
+			
+			\mybox{
+				\begin{center}
+					\includegraphics[scale=2]{Poke_small.png}
+				\end{center}
+				\vspace*{-4mm}
+				\textbf{Poke salmone 700ml    7€}
+				\vspace*{-3mm}
+			\raggedright
+			\begin{itemize}
+				\setlength\itemsep{-2mm}
+				\item {\footnotesize Base: Riso bianco}
+				\item {\footnotesize Proteine: Salmone e Surimi}
+				\item {\footnotesize Mix-In: Insalata, Avocado, Pomodorini e Mango}
+				\item {\footnotesize Salsa: Salsa Teriyaki}
+				\item {\footnotesize Crunchy: Cipolla fritta}
+			\end{itemize}
+			}
+			}
+			\vspace*{10mm}
+		\end{tabularx}
+		\vspace*{0.5mm}
+		\mybox{
+			\textbf{\colorbox{highlight}{Poke medio 700ml   \hspace*{10mm} 9.90€}}\newline
+			1 Base, 2 Proteine, 4 Mix-In, 2 Salse e 1 Crunchy
+		}
+		\mybox{
+			\textbf{\colorbox{highlight}{Poke grande 1000ml   \hspace*{10mm} 12.90€}}\newline
+			2 Basi, 3 Proteine, 5 Mix-In, 3 Salse e 3 Crunchy
+		}
+		\mybox{
+				\textbf{\colorbox{highlight}{Base 1euro  \hspace*{10mm} 12.90€}}\newline
+				\begin{tabularx}{\linewidth}{XX}
+					{
+						\begin{checkboxList}
+							\setlength\itemsep{-2mm}
+							\item Riso bianco
+							\item Riso Sushi
+						\end{checkboxList}
+					}&{
+						\begin{checkboxList}
+							\setlength\itemsep{-2mm}
+							\item Riso nero venere
+							\item Insalata mista
+						\end{checkboxList}
+						\vspace*{-10mm}
+					}
+				\end{tabularx}
+		}
 		
 		}
 	\end{tabularx}
