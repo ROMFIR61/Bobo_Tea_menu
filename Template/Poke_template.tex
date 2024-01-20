@@ -40,6 +40,9 @@
 \usepackage{scalerel}
 \usepackage{xparse}
 
+% Stop hyphenation
+\usepackage[none]{hyphenat}
+
 % License
 \usepackage[
 type={CC},
@@ -50,6 +53,7 @@ version={4.0},
 %---------------------------------------------------------------------
 
 \definecolor{square}{HTML}{fdbaba}
+\definecolor{alert}{HTML}{fdeeeb}
 \definecolor{desc}{HTML}{c97e82}
 
 %---------------------------------------------------------------------
@@ -76,10 +80,12 @@ version={4.0},
  \multicolumn{3}{l}{\textcolor{desc}{\footnotesize{#2}}} \\
 }
 
+%  Entry table formatted 3 column without description
 \newcommand{\entryThreeSimple}[3]{
 	{\textbf{\small{#1}}}&{\textbf{\small{#2}}}&{\textbf{\small{#3}}}\\
 }
 
+%  Entry table formatted 3 for drinks case (changed ditances between entries and text)
 \makeatletter
 \newcommand\notsotiny{\@setfontsize\notsotiny{6.2}{7.2}}
 \makeatother
@@ -87,15 +93,19 @@ version={4.0},
 \newcommand{\entryThreeSpecial}[3]{
 	{\textbf{\notsotiny{#1}}}&{\hspace*{-3.7mm}\textbf{\notsotiny{#2}}}&{\hspace*{-3.3mm}\textbf{\notsotiny{#3}}}\\
 }
+
+%  Entry table formatted 3 for drinks case (changed ditances between entries and text) with description
 \newcommand{\entryThreeSpecialDouble}[4]{
 	{\vspace*{-0.5mm}\textbf{\notsotiny{#1}}}&{\vspace*{-0.5mm}\hspace*{-3.7mm}\textbf{\notsotiny{#3}}}&{\vspace*{-0.5mm}\hspace*{-3.3mm}\textbf{\notsotiny{#4}}}\\
 	 \multicolumn{3}{l}{\notsotiny{#2}}\\
 }
 
+%  Entry table formatted 2 column without description
 \newcommand{\entryTwoSimple}[2]{
-	{\textbf{\scriptsize{#1}}}&{\hspace*{-2.5mm}\textbf{\scriptsize{#2}}}\\
+	{\textbf{#1}}&{\textbf{#2}}\\
 }
 
+%  Entry table formatted 2 column withdescription
 \newcommand{\entryTwoDesc}[3]{
 	{\vspace*{-0.5mm}\textbf{\small{#1}}}&{\vspace*{-0.5mm}\textbf{\small{#3}}}\\
 	%\thead{\vspace*{-3mm}\textcolor{desc}{#2}} &\thead{{}}&\thead{{}}\\
@@ -104,6 +114,9 @@ version={4.0},
 
 % Chili emoticon
 \NewDocumentCommand\chili{}{\scalerel*{\includegraphics{Chili.png}}{X}}
+
+% ! emoticon
+\NewDocumentCommand\exclamationPoint{}{\scalerel*{\includegraphics{!.png}}{X}}
 
 %---------------------------------------------------------------------
 
@@ -225,21 +238,21 @@ version={4.0},
 				\begin{tabularx}{\linewidth}{XX}
 					{
 					\begin{tabular*}{\linewidth}{ l l }
-						\entryTwoSimple{Crema cheesecake di Philadelphia}{1€}
-						\entryTwoSimple{Panna}{1€}
-						\entryTwoSimple{Mochi}{1€}
-						\entryTwoSimple{Purea di taro}{1€}
-						\entryTwoSimple{Palline di taro a tre colori}{1€}
-						\entryTwoSimple{Palline di tapioca nera}{0.50€}
+						\entryTwoSimple{{\scriptsize Crema cheesecake di Philadelphia}}{\hspace*{-2.5mm}{\scriptsize 1€}}
+						\entryTwoSimple{{\scriptsize Panna}}{\hspace*{-2.5mm}{\scriptsize 1€}}
+						\entryTwoSimple{{\scriptsize Mochi}}{\hspace*{-2.5mm}{\scriptsize 1€}}
+						\entryTwoSimple{{\scriptsize Purea di taro}}{\hspace*{-2.5mm}{\scriptsize 1€}}
+						\entryTwoSimple{{\scriptsize Palline di taro a tre colori}}{\hspace*{-2.5mm}{\scriptsize 1€}}
+						\entryTwoSimple{{\scriptsize Palline di tapioca nera}}{\hspace*{-2.5mm}{\scriptsize 0.50€}}
 					\end{tabular*}
 					}&{
 					\begin{tabular*}{\linewidth}{ l l }
-						\entryTwoSimple{Palline di agar}{0.50€}
-						\entryTwoSimple{Palline di tapioca}{0.50€}
-						\entryTwoSimple{Popping Boba}{0.50€}
-						\entryTwoSimple{Gelatine di cocco}{0.50€}
-						\entryTwoSimple{Budini}{0.50€}
-						\entryTwoSimple{Budini di gelatina alle erbe}{0.50€}
+						\entryTwoSimple{{\scriptsize Palline di agar}}{\hspace*{-2.5mm}{\scriptsize 0.50€}}
+						\entryTwoSimple{{\scriptsize Palline di tapioca}}{\hspace*{-2.5mm}{\scriptsize 0.50€}}
+						\entryTwoSimple{{\scriptsize Popping Boba}}{\hspace*{-2.5mm}{\scriptsize 0.50€}}
+						\entryTwoSimple{{\scriptsize Gelatine di cocco}}{\hspace*{-2.5mm}{\scriptsize 0.50€}}
+						\entryTwoSimple{{\scriptsize Budini}}{\hspace*{-2.5mm}{\scriptsize 0.50€}}
+						\entryTwoSimple{{\scriptsize Budini di gelatina alle erbe}}{\hspace*{-2.5mm}{\scriptsize 0.50€}}
 					\end{tabular*}
 					}
 				\end{tabularx}
@@ -292,56 +305,68 @@ version={4.0},
 		\vspace*{0.1cm}
 		\mybox{
 			\begin{tabular*}{\linewidth}{ l l l }
-				\entryThreeDesc{Involtini di primavera}{Carote, cavolo, cipolla e carne}{\hspace*{4mm}2pz}{\hspace*{13mm}2€}
-				\entryThreeDesc{Ravioli di carne al vapore}{Carote, cavolo e carne}{\hspace*{4mm}4pz}{\hspace*{13mm}4€}
-				\entryThreeDesc{Ravioli di carne alla griglia}{Carote, cavolo e carne}{\hspace*{4mm}4pz}{\hspace*{13mm}4.50€}
-				\entryThreeDesc{Ravioli di verdure al vapore}{Funghi, funghi cinesi, wakame, mais e carote}{\hspace*{4mm}4pz}{\hspace*{13mm}4€}
+				\entryThreeDesc{Involtini di primavera}{\vspace*{-0.5mm}Carote, cavolo, cipolla e carne}{\hspace*{4mm}2pz}{\hspace*{13mm}2€}
+				\entryThreeDesc{Ravioli di carne al vapore}{\vspace*{-0.5mm}Carote, cavolo e carne}{\hspace*{4mm}4pz}{\hspace*{13mm}4€}
+				\entryThreeDesc{Ravioli di carne alla griglia}{\vspace*{-0.5mm}Carote, cavolo e carne}{\hspace*{4mm}4pz}{\hspace*{13mm}4.50€}
+				\entryThreeDesc{Ravioli di verdure al vapore}{\vspace*{-0.5mm}Funghi, funghi cinesi, wakame, mais e carote}{\hspace*{4mm}4pz}{\hspace*{13mm}4€}
 			\end{tabular*}
 		}
 			
 			\mybox{
 				\begin{tabular*}{\linewidth}{ l l }
-					\entryTwoDesc{Riso alla cantonese}{Riso, piselli, prosciutto cotto e uovo}{\hspace*{37mm}5€}
-					\entryTwoDesc{Riso con verdure}{Riso, carote, cavolo e zucchine}{\hspace*{37mm}5€}
-					\entryTwoDesc{Riso con pollo}{Riso, pollo, uovo, carote, cavolo e zucchine}{\hspace*{37mm}5€}
-					\entryTwoDesc{Riso con gamberi}{Riso, gamberi, uovo, carote, cavolo e zucchine}{\hspace*{37mm}5.50€}
+					\entryTwoDesc{Riso alla cantonese}{\vspace*{-0.5mm}Riso, piselli, prosciutto cotto e uovo}{\hspace*{37mm}5€}
+					\entryTwoDesc{Riso con verdure}{\vspace*{-0.5mm}Riso, carote, cavolo e zucchine}{\hspace*{37mm}5€}
+					\entryTwoDesc{Riso con pollo}{\vspace*{-0.5mm}Riso, pollo, uovo, carote, cavolo e zucchine}{\hspace*{37mm}5€}
+					\entryTwoDesc{Riso con gamberi}{\vspace*{-0.5mm}Riso, gamberi, uovo, carote, cavolo e zucchine}{\hspace*{37mm}5.50€}
 				\end{tabular*}
 			}
 			
 			\mybox{
 				\begin{tabular*}{\linewidth}{ l l }
-					\entryTwoDesc{Spaghetti di riso con verdure}{Spaghetti di riso, carote, cavolo, zucchine e uovo}{\hspace*{23mm}5€}
-					\entryTwoDesc{Spaghetti di riso con pollo}{Spaghetti di riso, pollo, carote, cavolo, zucchine e uovo}{\hspace*{23mm}5€}
-					\entryTwoDesc{Spaghetti di riso con gamberi}{Spaghetti di riso, gamberi, carote, cavolo, zucchine e uovo}{\hspace*{23mm}5.50€}
+					\entryTwoDesc{Spaghetti di riso con verdure}{\vspace*{-0.5mm}Spaghetti di riso, carote, cavolo, zucchine e uovo}{\hspace*{23mm}5€}
+					\entryTwoDesc{Spaghetti di riso con pollo}{\vspace*{-0.5mm}Spaghetti di riso, pollo, carote, cavolo, zucchine e uovo}{\hspace*{23mm}5€}
+					\entryTwoDesc{Spaghetti di riso con gamberi}{\vspace*{-0.5mm}Spaghetti di riso, gamberi, carote, cavolo, zucchine e uovo}{\hspace*{23mm}5.50€}
 				\end{tabular*}
 			}
 			
 				\mybox{
 				\begin{tabular*}{\linewidth}{ l l }
-					\entryTwoDesc{Spaghetti di soia con verdure}{Spaghetti di soia, carote, cavolo e zucchine}{\hspace*{23mm}5€}
-					\entryTwoDesc{Spaghetti di soia con pollo}{Spaghetti di soia, pollo, carote, cavolo e zucchine}{\hspace*{23mm}5€}
-					\entryTwoDesc{Spaghetti di soia con gamberi}{Spaghetti di soia, gamberi, carote, cavolo e zucchine}{\hspace*{23mm}5.50€}
+					\entryTwoDesc{Spaghetti di soia con verdure}{\vspace*{-0.5mm}Spaghetti di soia, carote, cavolo e zucchine}{\hspace*{23mm}5€}
+					\entryTwoDesc{Spaghetti di soia con pollo}{\vspace*{-0.5mm}Spaghetti di soia, pollo, carote, cavolo e zucchine}{\hspace*{23mm}5€}
+					\entryTwoDesc{Spaghetti di soia con gamberi}{\vspace*{-0.5mm}Spaghetti di soia, gamberi, carote, cavolo e zucchine}{\hspace*{23mm}5.50€}
 				\end{tabular*}
 			}
 			
 			\mybox{
 				\begin{tabular*}{\linewidth}{ l l }
-					\entryTwoDesc{Pollo con verdure}{Pollo, carote, cavolo e zucchine}{\hspace*{15mm}5.50€}
-					\entryTwoDesc{Pollo piccante \hspace*{24mm}\Large{\chili}}{Pollo, carote, cavolo, zucchine e salsa piccante}{\hspace*{15mm}5.50€}
+					\entryTwoDesc{Pollo con verdure}{\vspace*{-0.5mm}Pollo, carote, cavolo e zucchine}{\hspace*{15mm}5.50€}
+					\entryTwoDesc{Pollo piccante \hspace*{24mm}{\Large\chili}}{\vspace*{-0.5mm}Pollo, carote, cavolo, zucchine e salsa piccante}{\hspace*{15mm}5.50€}
 					%\entryThreeDesc{Pollo piccante}{Pollo, carote, cavolo, zucchine e salsa piccante}{\chili}{5.50€}
-					\entryTwoDesc{Pollo al curry}{Pollo, carote, cavolo, zucchine e salsa al curry}{\hspace*{15mm}5.50€}
-					\entryTwoDesc{Pollo al limone}{Pollo, limone e salsa al limone}{\hspace*{15mm}5.50€}
+					\entryTwoDesc{Pollo al curry}{\vspace*{-0.5mm}Pollo, carote, cavolo, zucchine e salsa al curry}{\hspace*{15mm}5.50€}
+					\entryTwoDesc{Pollo al limone}{\vspace*{-0.5mm}Pollo, limone e salsa al limone}{\hspace*{15mm}5.50€}
 				\end{tabular*}
 			}
 			
 			\mybox{
 				\begin{tabular*}{\linewidth}{ l l }
-					\entryTwoDesc{Gamberi con verdure}{Gamberi, carote, cavolo e zucchine}{\hspace*{15mm}7.50€}
-					\entryTwoDesc{Gamberi piccanti  \hspace*{20mm}\Large{\chili}}{Gamberi, carote, cavolo, zucchine e salsa piccante}{\hspace*{15mm}7.50€}
+					\entryTwoDesc{Gamberi con verdure}{\vspace*{-0.5mm}Gamberi, carote, cavolo e zucchine}{\hspace*{15mm}7.50€}
+					\entryTwoDesc{Gamberi piccanti  \hspace*{20mm}{\Large\chili}}{\vspace*{-0.5mm}Gamberi, carote, cavolo, zucchine e salsa piccante}{\hspace*{15mm}7.50€}
 				%	\entryThreeDesc{Gamberi piccanti}{Gamberi, carote, cavolo, zucchine e salsa piccante}{\chili}{7.50€}
-					\entryTwoDesc{Gamberi al curry}{Gamberi, carote, cavolo, zucchine e salsa al curry}{\hspace*{15mm}7.50€}
-					\entryTwoDesc{Gamberi al limone}{Gamberi, limone e salsa al limone}{\hspace*{15mm}7.50€}
+					\entryTwoDesc{Gamberi al curry}{\vspace*{-0.5mm}Gamberi, carote, cavolo, zucchine e salsa al curry}{\hspace*{15mm}7.50€}
+					\entryTwoDesc{Gamberi al limone}{\vspace*{-0.5mm}Gamberi, limone e salsa al limone}{\hspace*{15mm}7.50€}
 				\end{tabular*}
+			}
+			
+			%----------------------------------------------- Here i'm working  ------------------------------------
+				
+				\vspace*{1mm}
+				\colorbox{alert}{
+				\begin{minipage}{0.97\linewidth}
+					\raggedright {\huge\exclamationPoint} Hai un'allergia o un'intolleranza alimentare?\\ 
+					Se hai un'allergia o un'intolleranza alimentare (o se una persona per la quale stai effettuando un ordine ne ha), telefona immediatamente al ristorante al numero 3281325773.\\ 
+					Non effettuare l'ordine se non riesci ad ottenere le informazioni di cui hai bisogno.\\
+					\vspace*{-0.5mm}
+				\end{minipage}
 			}
 		
 		}&{
