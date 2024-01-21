@@ -55,6 +55,7 @@ version={4.0},
 ]{doclicense}
 
 %---------------------------------------------------------------------
+% Defining colors
 
 \definecolor{square}{HTML}{fdbaba}
 \definecolor{alert}{HTML}{fdeeeb}
@@ -70,7 +71,7 @@ version={4.0},
 
 %---------------------------------------------------------------------
 
-%%%%% Minipages for entries %%%%%  
+%%%%% Minipage for entries %%%%%  
 \newcommand{\mybox}[1]{
 		\colorbox{square}{
 		\begin{minipage}{0.97\linewidth}
@@ -80,6 +81,7 @@ version={4.0},
 }
 
 %---------------------------------------------------------------------
+% Entries definition for tables
 
 %  Entry table formatted 3 column with description
 \newcommand{\entryThreeDesc}[4]{
@@ -153,7 +155,7 @@ version={4.0},
 	
 	%===================================================
 	
-	% First page
+	% ==================== First page
 	\newpage
 	\AddToShipoutPictureBG*{\backGroundImage}
 	\begin{landscape}
@@ -161,7 +163,7 @@ version={4.0},
 	\hspace*{-0.70cm}
 	\begin{tabularx}{\linewidth}{XXX}
 		{
-			% First column
+			% ==================== First column
 		\vspace*{0.1cm}
 		\mybox{
 			\begin{tabular*}{\linewidth}{ l l l }
@@ -213,9 +215,9 @@ version={4.0},
 			\end{tabular*}
 		}
 		
-		
 		}&{
-		% Second column
+		
+		% ==================== Second column
 			\vspace*{0.1cm}
 			\mybox{
 			\begin{tabular*}{\linewidth}{ l l l }
@@ -307,6 +309,7 @@ version={4.0},
 			}
 			
 		}&{
+		% ==================== Third column
 		\vspace*{0.1cm}
 		\hspace*{-2mm}
 		\begin{tikzpicture}
@@ -328,10 +331,11 @@ version={4.0},
 	\end{tabularx}
 	
 	
-	% Second page
+	% ==================== Second page
 	\newpage
 	\AddToShipoutPictureBG*{\backGroundImage}
 	
+	% ==================== First column
 	\hspace*{-0.70cm}
 	\begin{tabularx}{\linewidth}{XXX}
 		{
@@ -384,7 +388,6 @@ version={4.0},
 				\begin{tabular*}{\linewidth}{ l l }
 					\entryTwoDesc{Gamberi con verdure}{\vspace*{-0.5mm}Gamberi, carote, cavolo e zucchine}{\hspace*{15mm}7.50€}
 					\entryTwoDesc{Gamberi piccanti  \hspace*{20mm}{\Large\chili}}{\vspace*{-0.5mm}Gamberi, carote, cavolo, zucchine e salsa piccante}{\hspace*{15mm}7.50€}
-				%	\entryThreeDesc{Gamberi piccanti}{Gamberi, carote, cavolo, zucchine e salsa piccante}{\chili}{7.50€}
 					\entryTwoDesc{Gamberi al curry}{\vspace*{-0.5mm}Gamberi, carote, cavolo, zucchine e salsa al curry}{\hspace*{15mm}7.50€}
 					\entryTwoDesc{Gamberi al limone}{\vspace*{-0.5mm}Gamberi, limone e salsa al limone}{\hspace*{15mm}7.50€}
 				\end{tabular*}
@@ -401,7 +404,7 @@ version={4.0},
 			}
 			
 		}&{
-				
+				% ==================== Second column
 				\vspace*{0.1cm}			
 				\mybox{
 				\begin{tabular*}{\linewidth}{ l l l }
@@ -526,6 +529,7 @@ version={4.0},
 			}
 			\vspace*{19mm}
 		\end{tabularx}
+		% ==================== Third column
 		\vspace*{0.5mm}
 		\mybox{
 			\textbf{\colorbox{highlight}{Poke medio 700ml   \hspace*{10mm} 9.90€}}\newline
