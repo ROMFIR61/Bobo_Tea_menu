@@ -1,4 +1,4 @@
-# Menu of a chinese bar at Cesena in Italy.
+# Bobo Tea bar's menu at Cesena in Italy
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/97c5a203abde4e53898768346efa522e)](https://app.codacy.com/gh/R0mb0/Poke_menu_template/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Compilation_Test](https://github.com/R0mb0/Poke_menu_template/actions/workflows/Compilation_Test.yml/badge.svg)](https://github.com/R0mb0/Poke_menu_template/actions/workflows/Compilation_Test.yml)
@@ -9,7 +9,7 @@
 
 ---
 ## How to personalize this document online for free 
-1.  Fork this repository.
+1.  Fork this repository by pressing the second button at the top right.
 2.  Rename the repository as you want and change the description then Fork it!
 3.  ⚠️ You have to activate "Actions" on your repo; go to "Actions", click on "I understand my workflows, go ahead and enable them" ⚠️
 4.  Upload your images using GitHub into "Bobo_Tea_menu\Images".
