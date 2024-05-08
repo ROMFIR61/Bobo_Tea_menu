@@ -6,8 +6,8 @@
 
 ## Demo images:
 
--   ![Page1](https://github.com/R0mb0/Bobo_Tea_menu/blob/main/ReadMe_images/Page1.png)  
--   ![Page2](https://github.com/R0mb0/Bobo_Tea_menu/blob/main/ReadMe_images/Page2.png)
+- ![Page1](https://github.com/R0mb0/Bobo_Tea_menu/blob/main/ReadMe_images/Page1.png)  
+- ![Page2](https://github.com/R0mb0/Bobo_Tea_menu/blob/main/ReadMe_images/Page2.png)
 
 ---
 
