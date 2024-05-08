@@ -28,7 +28,8 @@
  old images names).
     4. Now "Commit changes"!
 6. Wait 2 minutes, got to "Actions" -> "Compile" -> click on the last one
- (look at the date on right) -> scroll down the page and click on "artifact file".  
+ (look at the date on right) -> scroll down the page and click on
+ "artifact file".  
 7. Done! now you have your document.
 
 ---
