@@ -4,6 +4,10 @@
 [![Compilation_Test](https://github.com/R0mb0/Poke_menu_template/actions/workflows/Compilation_Test.yml/badge.svg)](https://github.com/R0mb0/Poke_menu_template/actions/workflows/Compilation_Test.yml)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/97c5a203abde4e53898768346efa522e)](https://app.codacy.com/gh/R0mb0/Poke_menu_template/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/R0mb0/Bobo_Tea_menu)
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/R0mb0/Bobo_Tea_menu)
+[![Donate](https://img.shields.io/badge/PayPal-Donate%20to%20Author-blue.svg)](http://paypal.me/R0mb0)
+
 ## Demo images:
 
 - ![Page1](https://github.com/R0mb0/Bobo_Tea_menu/blob/main/ReadMe_images/Page1.png)  
